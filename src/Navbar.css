@@ -124,14 +124,15 @@
   }
 }
 
-/* Responsive navbar */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 10px;
   }
 
-  .nav-left, .nav-right {
+  .nav-left,
+  .nav-right {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -139,19 +140,23 @@
 
   .nav-left a {
     margin: 8px 0;
+    display: block;
   }
 
   .run-btn {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 
   .theme-switch {
+    margin: 10px 0;
+  }
+
+  .logo {
+    height: 28px;
     margin-bottom: 10px;
   }
-}
-
+  }
 @media (max-width: 480px) {
   .logo {
     height: 24px;
