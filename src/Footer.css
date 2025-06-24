@@ -14,3 +14,11 @@
   background-color: #1e1e1e;
   color: #aaa;
 }
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
