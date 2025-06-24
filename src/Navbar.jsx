@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import './Navbar.css';
-import logo from './assets/weblite-logo.png'; // adjust path if needed
+import logo from './assets/weblite-logo.png'; // adjust if needed
 
 function Navbar({ onRunClick, darkMode, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`navbar ${darkMode ? 'dark' : 'light'}`}>
+    <nav className="navbar">
       <div className="nav-left">
-        <img src={logo} alt="WebLite Logo" className="logo" />
+        <div className="logo-wrapper">
+          <img src={logo} alt="WebLite Logo" className="logo" />
+        </div>
 
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <div className="bar"></div>
