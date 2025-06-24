@@ -94,11 +94,47 @@
   margin-right: 12px;
   vertical-align: middle;
 }
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
 /* Responsive layout for main editor */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     height: auto;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .left, .right {
